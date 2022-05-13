@@ -37,8 +37,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>18.0.1</maven.compiler.source>
-        <maven.compiler.target>18.0.1</maven.compiler.target>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
      </properties>
 
     <dependencies>
@@ -221,6 +221,18 @@
                     <encoding>UTF-8</encoding>
                     <author>true</author>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadoc</id>
+                        <configuration>
+                            <version>true</version>
+                            <author>true</author>
+                        </configuration>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <!-- Maven GPG plugin -->
             <plugin>

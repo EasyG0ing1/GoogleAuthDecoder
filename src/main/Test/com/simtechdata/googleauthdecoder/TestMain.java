@@ -6,7 +6,7 @@ import java.util.List;
 public class TestMain {
 
 	public static void main(String[] args) {
-		File file = new File("/Users/michael/Documents/QRImages/FromGoogleApp/2022/Everything.png");
+		File file = new File("<path/to/your/image.png>");
 		Decoder decoder = new Decoder(file);
 		decoder.decode();
 		List<OTPRecord> otpRecords = decoder.getRecords();
