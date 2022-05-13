@@ -84,7 +84,7 @@ public class Decoder {
 	private final String          outFilename   = "output.txt";
 	private final String          sourcePycache = "pycache";
 	private final String          pycache    = "__pycache__";
-	private final List<OTPRecord> otpRecords = new LinkedList<>();
+	private final List<com.simtechdata.googleauthdecoder.OTPRecord> otpRecords = new LinkedList<>();
 	private       List<String>    otpLines;
 	private       File            sourceFolder;
 	private       File            pycacheFolder;
@@ -123,7 +123,7 @@ public class Decoder {
 	 * Use this method to get the list of OTPRecords that is generated
 	 * from the decode() method.
 	 */
-	public List<OTPRecord> getRecords() {
+	public List<com.simtechdata.googleauthdecoder.OTPRecord> getRecords() {
 		return otpRecords;
 	}
 

@@ -1,4 +1,4 @@
-module GoogleAuthDecoder {
+module com.simtechdata.googleauthdecoder {
 	requires com.google.zxing.javase;
 	requires com.google.zxing;
 	requires io.github.classgraph;
